@@ -49,5 +49,19 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{72be561c-f700-433a-9d4c-4beca4a9d076}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DoNgoaiChinhHang\DoNgoaiChinhHang.csproj">
+      <Project>{df9efd69-b1d2-4f95-b676-be07e38c9ab2}</Project>
+      <Name>DoNgoaiChinhHang</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{554009e6-870f-42d7-8165-399fe080ca74}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
