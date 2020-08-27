@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="DoNgoaiChinhHang.Admin.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Đồ Ngoại Chính Hãng</title>
+    <link href="CSS/Site.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="topbar">
+            <div class="topbar-logo">
+                <img src="../Img/dongoaichinhhang.png" />  
+                <img class="img-admin" width="45px" src="../Img/admin.png" />
+            </div>
+            <div class="topbar-right">
+                <div style="display: inline-block; vertical-align: middle; height: 45px">
+
+                Tài khoản: 
+                <asp:Label ID="txtAccName" runat="server" CssClass="txtAccName" Text="ADMIN"></asp:Label> - 
+                <a class="logout" href="#">ĐĂNG XUẤT</a>
+                </div>
+                <img height="45px" src="../Img/administrator.png" />
+            </div>
+        </div>
+        <div class="ContentForm">
+            <div class="menu-left-container">
+                <ul class="menu-left">
+                    <li><a href="#">THỐNG KÊ</a></li>
+                    <li><a href="#">SẢN PHẨM</a></li>
+                    <li><a href="#">BÀI VIẾT</a></li>
+                    <li><a href="#">ĐƠN HÀNG</a></li>
+                    <li><a href="#">QUẢN LÝ THÀNH VIÊN</a></li>
+                    <li><a href="#">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+            <div class="content-container">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
